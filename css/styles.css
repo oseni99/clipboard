@@ -1,0 +1,272 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  min-height: 100vh;
+  background-color: white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background-image: url(/images/bg-header-mobile.png);
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+button {
+  font-size: inherit;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.2rem;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.card h1,
+.card h2 {
+  color: hsl(210, 10%, 33%);
+}
+.card p {
+  color: hsla(202, 11%, 66%, 0.771);
+}
+
+.img_center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo_img {
+  max-width: 100px;
+}
+
+.downloads {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  height: 50px;
+  border-radius: 25px;
+  color: hsla(0, 0%, 100%, 0.8);
+}
+
+.btn:first-child {
+  background-color: hsl(171, 66%, 44%);
+  border-width: 0.5px;
+}
+.btn:first-child:hover {
+  background-color: hsla(171, 66%, 44%, 0.8);
+  box-shadow: 0px 2px 5px hsl(210, 10%, 33%);
+}
+
+.btn:last-child {
+  background-color: hsl(233, 100%, 69%);
+  border-width: 0.5px;
+}
+.btn:last-child:hover {
+  background-color: hsla(233, 100%, 69%, 0.746);
+  box-shadow: 0px 2px hsl(201, 11%, 66%);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card-2-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.details p {
+  padding-bottom: 1.5rem;
+}
+
+.details_3 {
+  margin-bottom: 8rem;
+}
+
+.card-3 img {
+  margin-bottom: 4rem;
+}
+
+.func-1,
+.func-2,
+.func-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.func_img {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: hsl(210, 10%, 33%);
+  background-color: hsl(210, 22%, 91%);
+  padding-top: 2rem;
+}
+
+.footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: hsl(210, 22%, 91%);
+
+}
+
+.footer-logo {
+  max-height: 60px;
+  max-width: 60px;
+}
+
+.footer-icon {
+  display: flex;
+  padding-bottom: 2rem;
+  gap: 2rem;
+}
+
+@media screen and (min-width:768px) {
+  body{
+    display: grid;
+    place-content: center;
+    margin: 0;
+  }
+  .card-1,.card-3,.card-6{
+    max-width: 800px;
+  }
+  .card{
+    margin: 0;
+  }
+  .downloads{
+    display: flex;
+    flex-direction: row;
+  }
+  .btn{
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .header{
+    background-image: url(/images/bg-header-desktop.png);
+   background-size: 1005;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .logo_img{
+    max-width: 80px;
+    margin-top: 4rem;
+  }
+  .group{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .dktp_view_max{
+    max-width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.5rem;
+  }
+  .card-2-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align:left;
+    max-width: 400px;
+    gap: 0;
+  }
+  .card-4-func{
+    display: flex;
+    max-width: 1200px;
+  }
+  .card-4-func p{
+    max-width: 400px;
+  }
+  .sponsors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  background-color: hsl(210, 22%, 91%);
+  padding-bottom: 1rem;
+  }
+  .footer_links,.footer_links ul, .footer_links li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    max-width: 350px;
+    justify-content: space-evenly;
+  background-color: hsl(210, 22%, 91%);
+
+  }
+  .cmp_img{
+    max-width: 500px;
+    max-height: 500px;
+  }
+  .footer-logo{
+    margin-bottom: 25%;
+  }
+}
